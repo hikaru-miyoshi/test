@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`Icon 1`] = `
+<div>
+  <div
+    class="__img_97e405_97e405"
+  >
+    <img
+      alt="heart"
+      src="/icon/heart.png"
+    />
+  </div>
+</div>
+`;

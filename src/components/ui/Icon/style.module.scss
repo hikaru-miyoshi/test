@@ -1,0 +1,10 @@
+@use "@/styles/helper" as *;
+
+$color-grey01: #bbb;
+
+.img {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 1em;
+}

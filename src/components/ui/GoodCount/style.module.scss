@@ -1,0 +1,19 @@
+@use "@/styles/helper" as *;
+
+.goodCount {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 10px;
+  color: #bbb;
+
+  @include mq(tablet) {
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  svg {
+    flex: 0 0 1em;
+  }
+}

@@ -1,0 +1,20 @@
+@use "./helper" as *;
+
+:root {
+  --color-gradient-pink: #e85298;
+  --color-gradient-orange: #f28146;
+  --color-gradient-primary: linear-gradient(to right, var(--color-gradient-pink), var(--color-gradient-orange));
+  --contents-max: 1140;
+  --contents-padding-y: 20;
+  --contents-padding-x: 14;
+
+  @include mq(tablet) {
+    --contents-padding-y: 35;
+    --contents-padding-x: 20;
+  }
+
+  @include mq(pc) {
+    --contents-padding-y: 50;
+    --contents-padding-x: 30;
+  }
+}

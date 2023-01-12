@@ -1,0 +1,24 @@
+@use "@/styles/helper" as *;
+
+.button {
+  display: inline-block;
+
+  &.is_default {
+    position: relative;
+    padding: 15px 70px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #e85298;
+    border-radius: 5px;
+  }
+
+  &.is_default::after {
+    position: absolute;
+    top: 11px;
+    right: 5px;
+    content: url(../../images/Button_icon.png);
+    transform: scale(0.5);
+  }
+}

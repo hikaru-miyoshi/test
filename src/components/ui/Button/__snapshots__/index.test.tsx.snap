@@ -1,0 +1,32 @@
+// Vitest Snapshot v1
+
+exports[`Button default 1`] = `
+<div>
+  <button
+    class="__button_3bd438_3bd438 __is_default_3bd438_3bd438"
+  >
+    ボタン
+  </button>
+</div>
+`;
+
+exports[`Button default 2`] = `
+<div>
+  <a
+    class="__button_3bd438_3bd438 __is_default_3bd438_3bd438"
+    href="#"
+  >
+    アンカーリンク
+  </a>
+</div>
+`;
+
+exports[`Button default 3`] = `
+<div>
+  <input
+    class="__button_3bd438_3bd438 __is_default_3bd438_3bd438"
+    type="button"
+    value="インプット"
+  />
+</div>
+`;

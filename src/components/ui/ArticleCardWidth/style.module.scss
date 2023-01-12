@@ -1,0 +1,115 @@
+@use "@/styles/helper" as *;
+
+.cardWrapper {
+  display: flex;
+}
+
+.rankNum {
+  $line-height: 1.5;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  width: calc(2em / #{$line-height});
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+
+  @include mq(tablet) {
+    font-size: 20px;
+  }
+
+  &::after {
+    display: block;
+    width: 10px;
+    height: 9px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq(tablet) {
+      width: 15px;
+      height: 13px;
+    }
+  }
+
+  &.is_up::after {
+    background-image: url(@/public/images/icons/up.svg);
+  }
+
+  &.is_down::after {
+    background-image: url(@/public/images/icons/down.svg);
+  }
+
+  &.is_invariant::after {
+    bottom: 7px;
+    height: 3px;
+    background-color: #bbb;
+  }
+}
+
+.card {
+  display: grid;
+  flex: 1 1 auto;
+  grid-template-columns: 40.5% 1fr;
+  overflow: hidden;
+  border-radius: 5px;
+
+  @include mq(tablet) {
+    grid-template-columns: 41.4% 1fr;
+    border-radius: 7px;
+  }
+}
+
+.thumbnail {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.contents {
+  padding: 5px 12px;
+  background: #fff;
+
+  @include mq(tablet) {
+    padding: 10px 12px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #bbb;
+
+  @include mq(tablet) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}

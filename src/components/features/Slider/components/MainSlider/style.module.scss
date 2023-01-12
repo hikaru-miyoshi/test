@@ -1,0 +1,14 @@
+@use "@/styles/helper" as *;
+
+.mainSlide {
+  height: 100%;
+
+  &__slides {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

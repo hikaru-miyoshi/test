@@ -1,0 +1,27 @@
+@use "@/styles/helper" as *;
+
+.button {
+  position: relative;
+  display: inline-block;
+  min-width: 113px;
+  padding-block: 4px;
+  padding-inline: 19px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 1px solid #bbb;
+  border-radius: 50px;
+
+  @include mq(tablet) {
+    min-width: 119px;
+    padding-inline: 28px;
+    font-size: 14px;
+  }
+
+  &.is_active {
+    color: #fff;
+    background-image: linear-gradient(90deg, rgb(233, 85, 146) 15%, rgb(242, 127, 72));
+    border-color: #fff;
+  }
+}

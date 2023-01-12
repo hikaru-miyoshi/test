@@ -1,0 +1,92 @@
+@use "@/styles/helper" as *;
+
+.card {
+  --card-radius: 10px;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+
+  &.is_transparent {
+    .thumbnail {
+      border-radius: 0 0 var(--card-radius) var(--card-radius);
+    }
+
+    .content {
+      background-color: transparent;
+    }
+  }
+}
+
+.thumbnail {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.content {
+  --x: 7px;
+  position: relative;
+  padding: 20px var(--x) 10px;
+  background-color: #fff;
+  @include mq(tablet) {
+    --x: 15px;
+    padding: 25px var(--x) 10px;
+  }
+}
+
+.labels {
+  position: absolute;
+  top: -5px;
+  left: var(--x);
+  display: block;
+  padding: 3px;
+  background: #fff;
+  border-radius: 3px;
+
+  @include mq(tablet) {
+    top: -10px;
+    padding: 6px 7px;
+    border-radius: 7px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #bbb;
+
+  @include mq(tablet) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.goodCount {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

@@ -1,0 +1,9 @@
+@use "@/styles/helper" as *;
+
+.thumbs {
+  height: 100%;
+
+  @include mq(tablet) {
+    padding-left: 22px;
+  }
+}

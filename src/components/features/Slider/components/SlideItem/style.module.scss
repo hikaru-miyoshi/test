@@ -1,0 +1,89 @@
+@use "@/styles/helper" as *;
+
+$pink: #e85298;
+
+.item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  gap: 10px;
+  height: 100%;
+  padding: 17px 4px 5px;
+  background-color: #fff;
+  border-radius: 3px;
+
+  @include mq(tablet) {
+    grid-template-columns: 35.4% 1fr;
+    gap: 12px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: 6px;
+    background-color: $pink;
+    border-radius: 50px;
+
+    @include mq(tablet) {
+      top: auto;
+      left: -22px;
+      width: 10px;
+      height: 100%;
+    }
+  }
+}
+
+.title {
+  font-size: 10px;
+  font-weight: bold;
+
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+}
+
+.thumbnail {
+  overflow: hidden;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.contents {
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+}
+
+.datetime {
+  font-size: 10px;
+  color: #bbb;
+
+  @include mq(tablet) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+[class~="swiper-slide-thumb-active"] .item {
+  &::after {
+    content: "";
+  }
+
+  .title {
+    color: $pink;
+  }
+}

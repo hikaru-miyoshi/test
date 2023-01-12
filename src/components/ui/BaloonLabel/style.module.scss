@@ -1,0 +1,31 @@
+@use "@/styles/helper" as *;
+
+.baloon {
+  position: relative;
+  display: inline-block;
+  padding: 0.45em 1.05em;
+  margin-bottom: 0.8em;
+  font-size: 14px;
+  color: #fff;
+  background-color: #e85298;
+  border-radius: 0.28em;
+
+  &::after {
+    position: absolute;
+    bottom: -6px;
+    left: 1em;
+    z-index: 0;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    content: "";
+    background-color: #e85298;
+    border-radius: 3px;
+    transform: rotate(45deg);
+
+    @include mq() {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

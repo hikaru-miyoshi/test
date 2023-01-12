@@ -1,0 +1,23 @@
+@use "@/styles/helper" as *;
+
+.section {
+  padding-block: calc(var(--contents-padding-y) * 1px);
+  padding-inline: calc(var(--contents-padding-x) * 1px);
+
+  &.is_white {
+    background-color: #fff;
+  }
+
+  &.is_gray {
+    background-color: #f8f8f8;
+  }
+
+  &.is_pink {
+    background-color: #fce9e9;
+  }
+}
+
+.inner {
+  max-width: calc(var(--contents-max) * 1px);
+  margin-inline: auto;
+}

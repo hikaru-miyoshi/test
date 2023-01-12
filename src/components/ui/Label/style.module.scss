@@ -1,0 +1,85 @@
+@use "@/styles/helper" as *;
+
+.label {
+  --label-color: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 37px;
+  padding: 1px 8px;
+  font-size: 10px;
+  color: #808080;
+  text-align: center;
+  background-color: var(--label-color);
+  border: 1px solid var(--label-color);
+  border-radius: 0.28em;
+
+  @include mq(tablet) {
+    min-width: 70px;
+    font-size: 12px;
+  }
+
+  @include mq(pc) {
+    min-width: 70px;
+    font-size: 12px;
+  }
+
+  &.is_red {
+    --label-color: #e23131;
+    color: #fff;
+  }
+
+  &.is_blue {
+    --label-color: #1949b9;
+    color: #fff;
+  }
+
+  &.is_yellow {
+    --label-color: #febc07;
+    color: #fff;
+  }
+
+  &.is_emerald {
+    --label-color: #14bfbf;
+    color: #fff;
+  }
+
+  &.is_purple {
+    --label-color: #9f32cc;
+    color: #fff;
+  }
+
+  &.is_orange {
+    --label-color: #fe6500;
+    color: #fff;
+  }
+
+  &.is_ghost {
+    --label-color: #707070;
+    color: var(--label-color);
+    background-color: #fff;
+  }
+
+  &.is_lightGhost {
+    --label-color: #bbb;
+    color: var(--label-color);
+    background-color: #fff;
+  }
+
+  &.is_small {
+    min-width: auto;
+    padding-inline: 7px;
+    font-size: 10px;
+  }
+
+  &.is_large {
+    min-width: auto;
+    padding-inline: 12px;
+    font-size: 12px;
+
+    @include mq(tablet) {
+      font-size: 14px;
+    }
+  }
+}

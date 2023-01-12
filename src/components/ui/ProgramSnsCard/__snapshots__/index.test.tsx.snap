@@ -1,0 +1,79 @@
+// Vitest Snapshot v1
+
+exports[`Label 1`] = `
+<div>
+  <div
+    class="_programSnsCard_938b61"
+  >
+    <div
+      class="_thumbnail_938b61"
+    >
+      <img
+        alt="thumbnail"
+        class="_thumbnailImage_938b61"
+        src="/ui/ProgramSnsCard/thumbnail_dummy_img01.jpg"
+      />
+    </div>
+    <div
+      class="_content_938b61"
+    >
+      <h4
+        class="_title_938b61"
+      >
+        タダイマ！タダイマ！タダイマ！タダイマ！タダイマ！
+      </h4>
+      <p
+        class="_time_938b61"
+      >
+        月～金曜 15:40
+      </p>
+    </div>
+    <div
+      class="_programSns_938b61"
+    >
+      <div
+        class="_snsIconList_d7bbb5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProgramSnsCard 1`] = `
+<div>
+  <div
+    class="_programSnsCard_938b61"
+  >
+    <div
+      class="_thumbnail_938b61"
+    >
+      <img
+        alt="thumbnail"
+        class="_thumbnailImage_938b61"
+        src="/ui/ProgramSnsCard/thumbnail_dummy_img01.jpg"
+      />
+    </div>
+    <div
+      class="_content_938b61"
+    >
+      <h4
+        class="_title_938b61"
+      >
+        タダイマ！タダイマ！タダイマ！タダイマ！タダイマ！
+      </h4>
+      <p
+        class="_time_938b61"
+      >
+        月～金曜 15:40
+      </p>
+    </div>
+    <div
+      class="_programSns_938b61"
+    >
+      <div
+        class="_snsIconList_d7bbb5"
+      />
+    </div>
+  </div>
+</div>
+`;

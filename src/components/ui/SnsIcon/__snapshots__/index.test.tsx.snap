@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`SnsIcon 1`] = `
+<div>
+  <div
+    class="_snsIconList_d7bbb5"
+  />
+</div>
+`;

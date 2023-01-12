@@ -1,0 +1,86 @@
+@use "@/styles/helper" as *;
+
+.writerDetail {
+  padding: 24px 14px 21px;
+  background-color: #fff;
+  @include mq() {
+    display: flex;
+    gap: 30px;
+    padding: 21px 20px 26px;
+  }
+}
+
+.picture {
+  padding: 0 38px;
+  @include mq() {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+  }
+}
+
+.pictureImage {
+  display: block;
+  aspect-ratio: 1/1;
+  border-radius: 14px;
+  object-fit: cover;
+  @include mq() {
+    border-radius: 0;
+  }
+}
+
+.contents {
+  margin-top: 27px;
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.nameKana {
+  font-size: 12px;
+  color: #808080;
+  letter-spacing: 0.1rem;
+}
+
+.nameKanji {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  @include mq() {
+    font-size: 24px;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    content: "";
+    background: linear-gradient(to right, #e85298, #f28146);
+    border-radius: 999px;
+  }
+}
+
+.job {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.05rem;
+}
+
+.snsIcon {
+  margin-top: 12px;
+}
+
+.text {
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  @include mq() {
+    margin-top: 36px;
+  }
+}

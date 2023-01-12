@@ -1,0 +1,11 @@
+@use "@/styles/helper" as *;
+
+$_flex-gap-half: 20;
+
+.main {
+  width: 100%;
+
+  @include mq(tablet) {
+    width: calc(((800 + #{$_flex-gap-half}) / var(--contents-max) * 100%) - (#{$_flex-gap-half * 1px}));
+  }
+}

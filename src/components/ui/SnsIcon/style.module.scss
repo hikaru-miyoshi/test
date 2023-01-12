@@ -1,0 +1,10 @@
+@use "@/styles/helper" as *;
+
+.snsIconList {
+  display: flex;
+  gap: 0 6px;
+}
+
+.snsIcon {
+  display: block;
+}

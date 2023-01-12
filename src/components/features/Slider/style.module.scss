@@ -1,0 +1,28 @@
+@use "@/styles/helper" as *;
+
+$main-slideer-size: 54.4;
+
+.wrapper {
+  @include mq(tablet) {
+    display: flex;
+    gap: 22px;
+  }
+}
+
+.mainWrapper {
+  flex: 1 1 #{$main-slideer-size * 1%};
+  aspect-ratio: 16 / 9;
+}
+
+.thumbsWrapper {
+  flex: 1 1 #{(100 - $main-slideer-size) * 1%};
+  margin-top: 8px;
+
+  @include mq(tablet) {
+    aspect-ratio: 16 / 9;
+    padding: 16px 20px;
+    margin-top: 0;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+}
