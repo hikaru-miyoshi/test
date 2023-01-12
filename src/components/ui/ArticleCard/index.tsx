@@ -20,6 +20,7 @@ type Props = Omit<ComponentPropsWithoutRef<"a">, "href"> & {
     text: string;
     variant: LabelVariant;
   };
+  
 };
 
 
