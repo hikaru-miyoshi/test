@@ -22,6 +22,7 @@ type Props = Omit<ComponentPropsWithoutRef<"a">, "href"> & {
   };
 };
 
+
 const ArticleCard = memo(props => {
   const { title, className, thumbnail, datetime, count, transparent, href, label, ...attr } = props;
   const classes = cx(styled.card, transparent && "is_transparent", className);
